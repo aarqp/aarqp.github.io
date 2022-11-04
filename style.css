@@ -1,0 +1,151 @@
+/*Estilos barra de navegación*/
+nav {
+    float: left;
+    background: #145DA0;
+    width:100%;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background:#145DA0;
+}
+.navi{
+    display: inline;
+}
+nav ul li {
+    float: left;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    color: #75E6DA;
+    text-decoration: none;
+}
+  nav ul li a:hover {
+    background: #2581dc;
+    color: #ffffff;
+}
+
+
+/*Estilos de títulos*/  
+.h1Centrado
+{
+    text-align:center;
+    display:block;	
+    padding: 2%;
+}
+.h2Centrado
+{
+    text-align:center;
+    display:block;	
+}
+
+/*Estilos de imagenes*/
+.centrarImagen
+{
+    display:block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+#imagen-1{
+	width: 100%;
+	height: auto;
+	max-width: 600px;
+   
+}
+#imagen-2{
+	width: 100%;
+	height: auto;
+	max-width: 600px;
+}
+#imagen_tabla{
+	width: 100%;
+	height: auto;
+	max-width: 550px;
+}
+
+/*Estilos de tablas*/
+caption{
+    caption-side: top;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #BDC6D9;
+    padding: 5px 10px;
+    caption-side:top;
+    color: #0C2D48;
+}
+
+@media screen and (min-width: 50px) {
+    table {
+        width:100%;
+        text-align:center;        
+    }
+}
+
+/*Contenedor de mapa en página contactos*/
+#contenedorMapa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+
+/*Tipografías*/
+body .h1Centrado {
+    font-family: Verdana;
+    color: #05445E;
+}
+body .h2Centrado {
+    font-family: Verdana;
+    color: #05445E;
+}
+#resaltarp{
+    color:#05445E;
+}
+body {
+    font:1rem monospace;
+    color:#2E8BC0;
+    background-color: #E3E7F1;
+}
+
+/*estilos de login*/
+#label_login{
+    margin: 3%;
+}
+#input_login{
+    margin: 2%;
+    padding: 3px;
+}
+#loginButton {
+    background-color:#05445E;
+    color:#E3E7F1;
+    border-radius: 12px;
+    padding: 3%;
+    
+}
+#loginButton:hover {
+    background-color: #2E8BC0;
+    color: #05445E;
+}
+#loginButton:active {
+    background-color: #2E8BC0;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#formulario_login_usuarios{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+    color: #05445E;
+    font-weight: bold;
+    text-align:center;
+}
