@@ -1,21 +1,19 @@
 <?php
 $usuario = $_POST['nombre_de_usuario'];
 $contrasena = $_POST['contrasena_usuario'];
-if ( ( $usuario == "resp_escolar") && ( $contrasena == "unadm_responsable" ) ) {
-header("Location: Area administrativa.html");
 
+if ( ( $usuario == "resp_escolar") && ( $contrasena == "unadm_responsable" ) ) {
+  header("Location: Area administrativa.html");
 } elseif ( ( $usuario != "resp_escolar") && ( $contrasena == "unadm_responsable" ) )  {
 	include("Acceso a usuarios.html");
   ?> 
   <h1>Error: Usuario incorrecto</h1>	
   <?php
-  /*header("Location: Acceso a usuarios.html");*/
 } elseif ( ( $usuario == "resp_escolar") && ( $contrasena != "unadm_responsable" ) ) {
 	include("Acceso a usuarios.html");
    ?> 
      <h1>Error: Contraseña incorrecta</h1>	
   <?php
-  /*header("Location: Acceso a usuarios.html");*/
 } else {
 	include("Acceso a usuarios.html");
    ?> 
